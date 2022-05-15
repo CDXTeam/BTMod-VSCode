@@ -1,0 +1,39 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Beatshape Modding Language",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.btmod",
+				"match": "\\b(print|sendchat|restart|ldm|srv|debg|skin|map)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.btmod",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.btmod",
+					"match": "\\\\."
+				}
+			]
+		},
+		"variable": {
+            "name": "variable.other.btmod",
+            "match" : "\\b(var|variable)\\b"
+        }
+	},
+	"scopeName": "source.btraw"
+}

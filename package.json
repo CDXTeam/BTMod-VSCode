@@ -1,0 +1,27 @@
+{
+    "name": "btmod-vscode",
+    "displayName": "BTMod-VSCode",
+    "description": "Beatshape Mod (.btmod) support for VSCode",
+    "icon": "icon.png",
+    "version": "1.0.0",
+    "publisher": "CDXTeam",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "btmod",
+            "aliases": ["Beatshape Modding Language", "btmod"],
+            "extensions": [".btmod",".btraw"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "btmod",
+            "scopeName": "source.btraw",
+            "path": "./syntaxes/btmod.tmLanguage.json"
+        }]
+    }
+}
