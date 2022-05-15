@@ -2,6 +2,10 @@
     "name": "btmod-vscode",
     "displayName": "BTMod-VSCode",
     "description": "Beatshape Mod (.btmod) support for VSCode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/CDXTeam/BTMod-VSCode.git"
+      },
     "icon": "icon.png",
     "version": "1.0.0",
     "publisher": "CDXTeam",
